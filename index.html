@@ -19,16 +19,16 @@
        border-size: 2px;
        border-color: #353535;
        box-shadow: 3px 3px 8px #888888;
-       padding: 10px;
        height: 20rem;
        background-color: #575757;
-       transition: border-color 0.5s, box-shadow 0.5s;
+       transition: border-color 0.5s, box-shadow 0.5s, transform 0.5s;
     }
     
     .Game:hover {
        border-color: #fff;
        box-shadow: 7px 7px 8px #888888;
-       transition: border-color 0.5s, box-shadow 0.5s;
+       transform: translateX(10), translateY(-10);
+       transition: border-color 0.5s, box-shadow 0.5s, transform 0.5s;
     }
     
     .Games {
@@ -46,7 +46,8 @@
     
     .GameName {
       margin: none;
-      font-size: 15px;
+      padding: 10px;
+      font-size: 20px;
       color: #909090;
       text-align: center;
     }
